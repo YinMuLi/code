@@ -10,6 +10,7 @@ set message=%date% %time:~0,5% AUTO
 FOR /L %%i IN (0, 1, 2) DO (
     @REM 切换到指定目录
     cd !repos[%%i]!
+    echo !repos[%%i]!
     @REM 设置状态变量为空
     set status=
     @REM 查看此仓库是否有修改
