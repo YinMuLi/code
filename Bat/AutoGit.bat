@@ -2,7 +2,7 @@
 setlocal enabledelayedexpansion
 @REM 推送地址数组,修改此数组的同时需要修改下面FOR循环的
 set repos[0]=D:\Work\School
-set repos[1]="C:\Users\Administrator\Documents\My Games\Terraria\tModLoader\ModSources\Branch"
+set repos[1]=C:\Users\Administrator\Documents\My" "Games\Terraria\tModLoader\ModSources\Branch
 set repos[2]=D:\Work\Code
 @REM 推送的信息
 set message=%date% %time:~0,5% AUTO
