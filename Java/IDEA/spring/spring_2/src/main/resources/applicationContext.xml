@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+    <!--    <bean id="steam" class="pojo.Steam" scope="prototype">-->
+    <!--        &lt;!&ndash;数组类型 &ndash;&gt;-->
+    <!--        <property name="games">-->
+    <!--            <list>-->
+    <!--                <ref bean="a"/>-->
+    <!--                <ref bean="b"/>-->
+    <!--            </list>-->
+    <!--        </property>-->
+    <!--        &lt;!&ndash;list集合&ndash;&gt;-->
+    <!--        <property name="animations">-->
+    <!--            <list>-->
+    <!--                <value>犬夜叉</value>-->
+    <!--                <value>家庭教师</value>-->
+    <!--            </list>-->
+    <!--        </property>-->
+    <!--        &lt;!&ndash;set集合&ndash;&gt;-->
+    <!--        <property name="roles">-->
+    <!--            <set>-->
+    <!--                <value>桔梗</value>-->
+    <!--                <value>杀生丸</value>-->
+    <!--            </set>-->
+    <!--        </property>-->
+    <!--        &lt;!&ndash;map集合&ndash;&gt;-->
+    <!--        <property name="ages">-->
+    <!--            <map>-->
+    <!--                <entry key="纲吉" value="15"/>-->
+    <!--                <entry key="内卷" value="16"/>-->
+    <!--            </map>-->
+    <!--        </property>-->
+    <!--    </bean>-->
+    <!--    <bean id="a" class="pojo.Game">-->
+    <!--        <property name="name" value="黑暗之魂"/>-->
+    <!--    </bean>-->
+    <!--    <bean id="b" class="pojo.Game">-->
+    <!--        <property name="name" value="之狼"/>-->
+    <!--    </bean>-->
+    <!--    <bean id="book" class="pojo.Book" init-method="init" destroy-method="destroy">-->
+    <!--        <property name="name" value="JOJO的奇妙冒险"/>-->
+    <!--    </bean>-->
+    <!--    &lt;!&ndash;配置后置处理器，因为该类继承了后置处理器，spring会默认把它当作后置处理器&ndash;&gt;-->
+    <!--    <bean id="myBeanPost" class="dao.MyPostBean"/>-->
+    <!--
+    autowire属性：
+    1.byName:根据属性名称注入，注入值bean的id值和类属性名称一样
+    2.byType:根据属性类型注入
+    -->
+    <bean id="people" class="pojo.People" autowire="byType"/>
+    <bean id="phone" class="pojo.Phone">
+        <property name="name" value="华为"/>
+    </bean>
+</beans>

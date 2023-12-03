@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.yinmu.dao.UserMapper">
+<!--
+    type：映射的类
+    column:表的列名
+    property:类的构造方法中的形参名
+-->
+    <resultMap id="userMap" type="user">
+        <result column="pwd" property="password"/>
+    </resultMap>
+    <select id="getUser" resultMap="userMap">
+        select id,account,pwd from mybatis;
+    </select>
+
+
+    <select id="queryByID" resultType="user" parameterType="int">
+        select * from mybatis where id=#{id};
+    </select>
+
+
+    <insert id="addUser"  parameterType="user">
+        insert into mybatis (account, pwd) values (#{account},#{pwd});
+    </insert>
+
+    <update id="updateByID" >
+        update mybatis set account=#{param1} where id=#{param2};
+    </update>
+
+    <delete id="deleteByID" parameterType="int">
+        delete from mybatis where id=#{id};
+    </delete>
+<!--
+        List<User> queryLimit(Map<String,Integer> map);
+-->
+    <select id="queryLimit" resultType="user" parameterType="map">
+        select * from mybatis limit #{startIndex},#{offset};
+    </select>
+</mapper>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>登录页面</title>
+    <style>
+        /* 设定全局字体 */
+        body {
+            font-family: "Helvetica Neue", Arial, sans-serif;
+        }
+
+        /* 设定背景颜色和高度 */
+        body {
+            background-color: #4E5156;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* 设定登录框样式 */
+        .login-box {
+            background-color: white;
+            border-radius: 10px;
+            padding: 40px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            max-width: 400px;
+            width: 80%;
+            max-height: 500px;
+            overflow-y: auto;
+            text-align: center;
+        }
+
+        /* 设定标题样式 */
+        .login-box h1 {
+            font-size: 36px;
+            color: #4E5156;
+            margin-top: 0;
+            margin-bottom: 30px;
+        }
+
+        /* 设定表单样式 */
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        /* 设定输入框样式 */
+        input[type="text"], input[type="password"] {
+            border-radius: 10px;
+            border: none;
+            padding: 10px;
+            margin: 10px;
+            width: 80%;
+            height: 40px;
+            font-size: 16px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+
+        /* 设定登录按钮样式 */
+        button[type="submit"] {
+            background-color: #4E5156;
+            color: white;
+            border-radius: 10px;
+            border: none;
+            padding: 10px;
+            margin: 10px;
+            width: 80%;
+            height: 40px;
+            font-size: 16px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+            cursor: pointer;
+            transition: background-color 0.5s ease;
+        }
+
+        /* 设定登录按钮悬停样式 */
+        button[type="submit"]:hover {
+            background-color: #63676C;
+        }
+
+        /* 设定链接样式 */
+        a {
+            color: #4E5156;
+            text-decoration: none;
+            font-size: 16px;
+            margin-top: 20px;
+            transition: color 0.5s ease;
+        }
+
+        /* 设定链接悬停样式 */
+        a:hover {
+            color: #63676C;
+        }
+    </style>
+</head>
+<body>
+<div class="login-box">
+    <h1>用户登录</h1>
+    <form method="post" action="/demo_2/login">
+        <input type="text" placeholder="请输入用户名" name="account">
+        <input type="password" placeholder="请输入密码" name="password">
+        <button type="submit">登录</button>
+    </form>
+</div>
+</body>
+</html>

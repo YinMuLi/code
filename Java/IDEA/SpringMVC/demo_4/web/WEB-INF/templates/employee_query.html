@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Employee</title>
+</head>
+<body>
+<center>
+    <table border="1" align="center">
+        <tr>
+            <th colspan="5">Employee</th>
+        </tr>
+        <tr>
+            <th>id</th>
+            <th>name</th>
+            <th>email</th>
+            <th>gender</th>
+            <th>options</th>
+        </tr>
+        <tr th:each="employee : ${employees}">
+            <td th:text="${employee.id}"/>
+            <td th:text="${employee.name}"/>
+            <td th:text="${employee.email}"/>
+            <td th:text="${employee.gender}"/>
+            <td>
+              <a id="aDel" th:href="@{'/employee/'+${employee.id}}">delete</a>
+                <a th:href="@{'/employee/'+${employee.id}}">update</a>
+            </td>
+        </tr>
+    </table>
+    <a th:href="@{/add}">add new employee</a>
+</center>
+<form id="del" method="post">
+    <input type="hidden" name="_method" value="DELETE">
+</form>
+</body>
+</html>
+<script>
+    let aDel = document.querySelectorAll("#aDel")
+    let del = document.querySelector("#del")
+    aDel.forEach((item) => {
+        item.onclick = (e) => {
+            del.action=item.href
+            console.log(item.href)
+            e.preventDefault()
+            del.submit()
+        }
+    })
+</script>

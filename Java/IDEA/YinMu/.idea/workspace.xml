@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="e94ca7f8-00d7-41b8-9c85-0c99c83ff518" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/sql/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/out/production/JavaSE/com/yinmu/a/ArrayBox.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/out/production/JavaSE/com/yinmu/a/BoxIndexOutOfBoundsException.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/out/production/JavaSE/com/yinmu/a/Dog.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/out/production/JavaSE/com/yinmu/a/Experiment10.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/out/production/JavaSE/com/yinmu/a/Experiment12.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/out/production/JavaSE/com/yinmu/a/Experiment4.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/out/production/JavaSE/com/yinmu/a/Experiment6.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/out/production/JavaSE/com/yinmu/a/Experiment7.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/out/production/JavaSE/com/yinmu/a/Experiment8.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/out/production/JavaSE/com/yinmu/a/Experiment9.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/out/production/JavaSE/com/yinmu/a/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/out/production/JavaSE/com/yinmu/b/Butcher.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/out/production/JavaSE/com/yinmu/b/Farmer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/out/production/JavaSE/com/yinmu/b/Pig.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/out/production/JavaSE/com/yinmu/b/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/out/production/JavaSE/com/yinmu/c/Computer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/out/production/JavaSE/com/yinmu/c/ComputerRoom.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/out/production/JavaSE/com/yinmu/c/Student.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/out/production/JavaSE/com/yinmu/c/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/src/com/yinmu/a/ArrayBox.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/src/com/yinmu/a/Dog.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/src/com/yinmu/a/Experiment10.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/src/com/yinmu/a/Experiment12.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/src/com/yinmu/a/Experiment4.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/src/com/yinmu/a/Experiment6.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/src/com/yinmu/a/Experiment7.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/src/com/yinmu/a/Experiment8.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/src/com/yinmu/a/Experiment9.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/src/com/yinmu/a/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/src/com/yinmu/b/Butcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/src/com/yinmu/b/Farmer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/src/com/yinmu/b/Pig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/src/com/yinmu/b/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/src/com/yinmu/c/Computer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/src/com/yinmu/c/ComputerRoom.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/src/com/yinmu/c/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../JavaSE/src/com/yinmu/c/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../output.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../vscode/单例模式/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../vscode/单例模式/out.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../vscode/单例模式/src/com/Demo_1/Singleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../vscode/单例模式/src/com/Demo_2/Singleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../vscode/单例模式/src/com/Demo_3/Singleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../vscode/单例模式/src/com/Demo_4/Singleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../vscode/单例模式/src/com/Demo_5/Singleton.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../vscode/单例模式/src/com/test/SingletonTest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../vscode/工厂模式/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../vscode/工厂模式/a.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../vscode/工厂模式/src/com/yinmu/one/Origin.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../vscode/工厂模式/src/com/yinmu/one/Student.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../vscode/工厂模式/src/com/yinmu/test/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../python/vsocde/typroa/README.MD" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../python/vsocde/typroa/main.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../python/vsocde/typroa/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../python/vsocde/typroa/util.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../前端/nodejs/yinmu/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../../前端/nodejs/yinmu/package.json" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Tag Library Descriptor" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$PROJECT_DIR$/../../../../soft/scoop/apps/maven/3.9.0" />
+        <option name="useMavenConfig" value="true" />
+        <option name="userSettingsFile" value="D:\soft\scoop\apps\maven\3.9.0\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="2N2iYNXfc1OGk7LsiSj8sSQDmOX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;1.8&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.19425288&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;MavenSettings&quot;
+  }
+}</component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e94ca7f8-00d7-41b8-9c85-0c99c83ff518" name="Changes" comment="" />
+      <created>1678868629503</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1678868629503</updated>
+      <workItem from="1678868631144" duration="871000" />
+      <workItem from="1678881783543" duration="2066000" />
+      <workItem from="1678883958962" duration="54000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

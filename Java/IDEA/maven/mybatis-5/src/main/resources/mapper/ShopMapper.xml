@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.shop.dao.ShopMapper">
+    <cache/>
+    <sql id="if-name-price">
+        <if test="price!=null">
+            price=#{price},
+        </if>
+        <if test="name!=null">
+            name=#{name}
+        </if>
+    </sql>
+    <!-- 在没有where标签的情况下，就只能写where 1 =1 来保证查询语句的执行-->
+    <!-- 注意这里一定不要在 where 1=1 后面加分号-->
+    <!-- 当map中传入的参数中有price属性时，拼接sql语句-->
+    <!-- select * from shop where 1=1 and price =#{price}-->
+    <!--    如果只传入name参数，where 会自动把and去掉-->
+    <!--
+        当我传入两个参数的时候
+         map.put("price",300);
+         map.put("name","丝袜奶茶");
+         sql与语句拼接为：Preparing: select * from shop WHERE name=?
+         <choose>标签只会选择一个，
+    -->
+    <select id="queryShops" resultType="shop">
+        select *
+        from shop
+        <where>
+            <choose>
+                <when test="name !=null">
+                    name=#{name}
+                </when>
+                <when test="price !=null">
+                    price =#{price}
+                </when>
+            </choose>
+        </where>
+    </select>
+<!--
+    price=#{price}后面的逗号不能省略
+    当只传入一个参数price时sql：==>  Preparing: update shop SET price=? where id=?
+    会自动帮我们省略掉逗号
+    注意where写在标签的外面
+-->
+    <update id="updateShop">
+        update shop
+        <set>
+            <include refid="if-name-price">
+            </include>
+        </set>
+        where id=#{id}
+    </update>
+</mapper>

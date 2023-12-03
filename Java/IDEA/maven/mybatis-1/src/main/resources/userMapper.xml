@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--
+    注册sql查询语句
+    命名空间写类的全限定名，因为xml文件无法像IDEA那样会自动为你找需要的包
+-->
+<mapper namespace="com.yinmu.dao.UserMapper">
+<!--
+    select 中写查询的语句
+    id 写com.yinmu.dao.UserMapper接口中的方法，哪个是查询的方法就写那个方法的名字
+    其返回结果只要记住两个
+    1.resultType 返回值类型，这里要写类的全限定名
+    2.resultMap
+-->
+    <select id="getUser" resultType="com.yinmu.pojo.User">
+        select * from mybatis;
+    </select>
+
+<!--
+    parameterType:参数类型
+    #{}相当于占位符
+    id是User queryByID(int id) 的参数的名字
+-->
+    <select id="queryByID" resultType="com.yinmu.pojo.User" parameterType="int">
+        select * from mybatis where id=#{id};
+    </select>
+
+<!--
+    insert 不用设置返回值
+    values (#{account},#{pwd})
+    account是User(String account, String pwd);构造方法中的参数
+-->
+<!--    <insert id="addUser"  parameterType="com.yinmu.pojo.User">-->
+<!--        insert into mybatis (account, pwd) values (#{account},#{pwd});-->
+<!--    </insert>-->
+
+<!--
+    #{xxx}中是map的键，利用map可以解决多参数的问题
+-->
+    <insert id="addUser"  parameterType="map">
+        insert into mybatis (account, pwd) values (#{account},#{pwd});
+    </insert>
+<!--
+     Available parameters are [arg1, arg0, param1, param2]
+     如果是多参数的情况下，可以不写参数的类型
+     注意：
+     arg 是从0开始的
+     param 是从1开始的
+-->
+    <update id="updateByID" >
+        update mybatis set account=#{param1} where id=#{param2};
+    </update>
+
+    <delete id="deleteByID" parameterType="int">
+        delete from mybatis where id=#{id};
+    </delete>
+</mapper>

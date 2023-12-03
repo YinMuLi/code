@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!--
+        创建学生对象就等同于Student student=new Student();
+        id:就是创建对象的名称
+        class：创建对象的类型，底层是通过反射构建对象
+    -->
+    <!--    <bean id="student" class="pojo.Student">-->
+    <!--        <property name="name" value="张三"/>-->
+    <!--        <property name="age" value="300"/>-->
+    <!--    </bean>-->
+
+    <!--    <bean id="cat" class="pojo.Cat">-->
+    <!--        <constructor-arg name="name" value="Tom"/>-->
+    <!--        &lt;!&ndash;设置空值&ndash;&gt;-->
+    <!--        <constructor-arg name="age">-->
+    <!--            <null/>-->
+    <!--        </constructor-arg>-->
+    <!--    </bean>-->
+    <bean id="person" class="pojo.Person">
+        <property name="name" value="Jack"/>
+        <!--内部关联属性-->
+        <property name="pet" ref="cat"/>
+        <property name="pet.name" value="tom"/>
+        <property name="pet.age" value="20"/>
+    </bean>
+    <bean id="cat" class="pojo.Cat"/>
+</beans>

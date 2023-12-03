@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<center>
+    <hr/>
+    <!--  enctype="text/plain"：解决请求报文中文乱码问题  -->
+    <form th:action="@{/requestBody}" method="post" enctype="text/plain">
+        <input type="text" name="userName"/><br/>
+        <input type="text" name="password"/><br/>
+        <input type="submit" value="@RequestBody"/>
+    </form>
+    <hr/>
+    <form th:action="@{/requestEntity}" method="post" enctype="text/plain">
+        <input type="text" name="userName"/><br/>
+        <input type="text" name="password"/><br/>
+        <input type="submit" value="RequestEntity"/>
+    </form>
+    <hr/>
+    <a th:href="@{/responseBody}">responseBody</a><br/>
+    <a th:href="@{/responseJson}">json</a>
+    <hr/>
+    <button th:value="@{/ajax}" id="ajax">send AJAX request</button><br>
+    <a th:href="@{/file}">file download and upload</a>
+</center>
+</body>
+</html>
+<script>
+    let btn = document.querySelector("#ajax")
+    btn.onclick = () => {
+        let xhr = new XMLHttpRequest()
+        xhr.open("POST", btn.href)
+        xhr.send('name=jack')
+    }
+</script>

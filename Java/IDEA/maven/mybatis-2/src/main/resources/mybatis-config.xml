@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration
+        PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<!--core configuration-->
+<configuration>
+    <!--
+        默认使用的环境 ID（比如：default="development"）。
+        每个 environment 元素定义的环境 ID（比如：id="development"）。
+        事务管理器的配置（比如：type="JDBC"）。
+        数据源的配置（比如：type="POOLED"）创建连接池。
+        默认环境和环境 ID 顾名思义。 环境可以随意命名，但务必保证默认的环境 ID 要匹配其中一个环境 ID。
+    -->
+    <!--
+        The content of element type "configuration" must match
+        "(properties?,settings?,typeAliases?,typeHandlers?,objectFactory?,
+        objectWrapperFactory?,reflectorFactory?,plugins?,environments?,databaseIdProvider?,mappers?)"
+        properties:资源引入的文件必须写在xml的最开头
+        properties可以自闭和:<properties resource="db.properties"/>
+        也可以在里面写属性:
+            <properties resource="db.properties">
+            优先采用外部的文件中password
+            <property name="password" value="123456"/>
+            </properties>
+            xml会优先采用属性文件中的
+    -->
+    <properties resource="db.properties"/>
+<!--    <settings>-->
+<!--        <setting name="logImpl" value="STDOUT_LOGGING"/>-->
+<!--    </settings>-->
+    <!--
+    给com.yinmu.pojo.User起别名User
+    写在<properties/>标签后面
+    -->
+    <typeAliases>
+        <package name="com.yinmu"/>
+    </typeAliases>
+    <environments default="development">
+        <environment id="development">
+            <transactionManager type="JDBC"/>
+            <dataSource type="POOLED">
+                <property name="driver" value="${driver}"/>
+                <property name="url" value="${url}"/>
+                <property name="username" value="${username}"/>
+                <property name="password" value="${password}"/>
+            </dataSource>
+        </environment>
+    </environments>
+    <mappers>
+        <mapper resource="userMapper.xml"/>
+    </mappers>
+</configuration>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Login</title>
+</head>
+<body>
+<form method="post" action="/demo_4/login">
+    <input type="text" placeholder="请输入用户名" name="username"/>
+    <input type="password" placeholder="请输入密码" name="password">
+    <br>
+    <input type="checkbox" name="maintain">
+    <span>记住我一周</span>
+    <button type="submit" class="btn">登录</button>
+</form>
+</body>
+</html>
+<style>
+    body {
+        display: flex;
+        user-select: none;
+    }
+
+    form {
+        width: 200px;
+        margin: 20px auto;
+        text-align: center;
+    }
+
+    .btn {
+        width: 150px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    input {
+        margin: 10px auto;
+    }
+</style>

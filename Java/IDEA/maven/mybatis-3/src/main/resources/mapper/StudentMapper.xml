@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.yinmu.dao.StudentMapper">
+
+    <select id="queryAllStudents" resultMap="studentMap">
+        select s.id,s.name,s.t_id from student as s;
+    </select>
+    <resultMap id="studentMap" type="Student">
+<!--
+    <association column="xx"/>
+    column 就是传给下一次查询的参数
+-->
+        <association property="teacher" column="t_id" javaType="teacher" select="getTeacher"/>
+    </resultMap>
+    <select id="getTeacher" resultType="teacher">
+        select * from teacher where id=#{t_id};
+    </select>
+</mapper>
